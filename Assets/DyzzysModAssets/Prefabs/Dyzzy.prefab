@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4059372422215643}
+  - component: {fileID: 114472129037681998}
   - component: {fileID: 114190967632551620}
   - component: {fileID: 114421384111938668}
   - component: {fileID: 114081461618018503}
@@ -16,7 +17,6 @@ GameObject:
   - component: {fileID: 114997074887337774}
   - component: {fileID: 114969577739340399}
   - component: {fileID: 114193385136356738}
-  - component: {fileID: 114315837256366134}
   m_Layer: 0
   m_Name: Dyzzy
   m_TagString: Untagged
@@ -38,6 +38,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114472129037681998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043437007509817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc1cc32386cebb241a348cfce30cec1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardInfo: {fileID: 114421384111938668}
+  gun: {fileID: 114200975647727354}
+  cardStats: {fileID: 114969577739340399}
+  statModifiers: {fileID: 114081461618018503}
+  block: {fileID: 114997074887337774}
+  cardArt: {fileID: 0}
 --- !u!114 &114190967632551620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,13 +83,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundDisableBlockBasic: 0
   cardName: Dyzzy
-  cardDestription: Dyzzy's Dyzfunkshinal Card!
+  cardDestription: Adds Dyzfunkshinal Stats
   cardStats:
   - positive: 1
-    amount: 
-    simepleAmount: 2
-    stat: Bounce
-  rarity: 0
+    amount: +5
+    simepleAmount: 3
+    stat: Bounces
+  - positive: 1
+    amount: '*2.5'
+    simepleAmount: 4
+    stat: Damage
+  - positive: 1
+    amount: /5
+    simepleAmount: 4
+    stat: Reload Speed
+  - positive: 1
+    amount: '*5'
+    simepleAmount: 4
+    stat: Ammo
+  rarity: 2
   cardArt: {fileID: 1956224619057945, guid: c706523a106243f43aafa86f80fa2ae4, type: 3}
   sprite: {fileID: 21300000, guid: 5b742d082ddefaa489468fac5e1e3bff, type: 2}
   sourceCard: {fileID: 0}
@@ -96,8 +126,8 @@ MonoBehaviour:
   soundCharacterSlowFreeze: {fileID: 0}
   AddObjectToPlayer: {fileID: 0}
   objectsAddedToPlayer: []
-  sizeMultiplier: 2
-  health: 2
+  sizeMultiplier: 1
+  health: 1
   movementSpeed: 1
   jump: 1
   gravity: 1
@@ -105,7 +135,7 @@ MonoBehaviour:
   slowSlow: 0
   fastSlow: 0
   secondsToTakeDamageOver: 0
-  numberOfJumps: 5
+  numberOfJumps: 1
   regen: 0
   lifeSteal: 5
   refreshOnDamage: 1
@@ -154,20 +184,20 @@ MonoBehaviour:
   shootPosition: {fileID: 0}
   player: {fileID: 0}
   isReloading: 0
-  damage: 2
+  damage: 1
   reloadTime: 1
   reloadTimeAdd: 0
   recoilMuiltiplier: 1
   knockback: 1
   attackSpeed: 1
-  projectileSpeed: 5
+  projectileSpeed: 1
   projectielSimulatonSpeed: 1
   gravity: 1
   damageAfterDistanceMultiplier: 1
   bulletDamageMultiplier: 1
   multiplySpread: 1
   shakeM: 1
-  ammo: 20
+  ammo: 1
   ammoReg: 0
   size: 0
   overheatMultiplier: 0
@@ -284,15 +314,3 @@ MonoBehaviour:
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &114315837256366134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1043437007509817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc1cc32386cebb241a348cfce30cec1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

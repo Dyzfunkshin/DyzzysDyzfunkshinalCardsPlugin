@@ -22,7 +22,7 @@ public class Dyzzy : CustomCard
     public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
     {
         gun.reflects += 5;
-        gun.damage *= 5;
+        gun.damage *= 2.5f;
         gun.reloadTime /= 5;
         gun.ammo *= 5;
     }
@@ -39,17 +39,12 @@ public class Dyzzy : CustomCard
 
     protected override CardInfo.Rarity GetRarity()
     {
-        return CardInfo.Rarity.Rare;
+        return cardInfo.rarity;
     }
 
     protected override CardInfoStat[] GetStats()
     {
-        CardInfoStat[] info = new CardInfoStat[]
-        {
-            new CardInfoStat()
-        };
-
-        return info;
+        return cardInfo.cardStats;
     }
 
     protected override CardThemeColor.CardThemeColorType GetTheme()

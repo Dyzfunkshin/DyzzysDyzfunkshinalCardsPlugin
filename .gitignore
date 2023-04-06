@@ -74,6 +74,7 @@ crashlytics-build.properties
 # Project files
 /Assets/AnimationClip
 /Assets/AnimatorController
+/Assets/AssetBundles
 /Assets/AudioClip
 /Assets/AudioMixerController
 /Assets/GameObject

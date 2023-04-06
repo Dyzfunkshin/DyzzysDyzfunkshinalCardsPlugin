@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4059372422215643}
+  - component: {fileID: 114201637956730252}
   - component: {fileID: 114190967632551620}
   - component: {fileID: 114421384111938668}
   - component: {fileID: 114081461618018503}
@@ -16,7 +17,6 @@ GameObject:
   - component: {fileID: 114997074887337774}
   - component: {fileID: 114969577739340399}
   - component: {fileID: 114193385136356738}
-  - component: {fileID: 114270632854031320}
   m_Layer: 0
   m_Name: Reflectx3
   m_TagString: Untagged
@@ -38,6 +38,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114201637956730252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043437007509817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65a54db6463dae4408f8c1249f930150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardInfo: {fileID: 114421384111938668}
+  gun: {fileID: 114200975647727354}
+  cardStats: {fileID: 114969577739340399}
+  statModifiers: {fileID: 114081461618018503}
+  block: {fileID: 114997074887337774}
+  cardArt: {fileID: 0}
 --- !u!114 &114190967632551620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,13 +82,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundDisableBlockBasic: 0
-  cardName: Bounce
-  cardDestription: Adds bounces
+  cardName: Reflect
+  cardDestription: 
   cardStats:
   - positive: 1
-    amount: 
+    amount: 3
     simepleAmount: 2
-    stat: Bounce
+    stat: Bounces
   rarity: 0
   cardArt: {fileID: 1956224619057945, guid: c706523a106243f43aafa86f80fa2ae4, type: 3}
   sprite: {fileID: 21300000, guid: 5b742d082ddefaa489468fac5e1e3bff, type: 2}
@@ -284,15 +302,3 @@ MonoBehaviour:
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &114270632854031320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1043437007509817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65a54db6463dae4408f8c1249f930150, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

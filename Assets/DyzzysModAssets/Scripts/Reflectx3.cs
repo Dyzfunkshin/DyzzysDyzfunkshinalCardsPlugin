@@ -10,7 +10,6 @@ public class Reflectx3 : CustomCard
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -41,12 +40,7 @@ public class Reflectx3 : CustomCard
 
     protected override CardInfoStat[] GetStats()
     {
-        CardInfoStat[] info = new CardInfoStat[]
-        {
-            new CardInfoStat()
-        };
-
-        return info;
+        return cardInfo.cardStats;
     }
 
     protected override CardThemeColor.CardThemeColorType GetTheme()
