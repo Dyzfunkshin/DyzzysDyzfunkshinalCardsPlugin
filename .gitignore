@@ -76,7 +76,6 @@ crashlytics-build.properties
 /Assets/AnimatorController
 /Assets/AudioClip
 /Assets/AudioMixerController
-/Assets/Editor
 /Assets/GameObject
 /Assets/Material
 /Assets/Monobehaviour
